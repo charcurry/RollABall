@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public GameObject door;
 
     private float movementX;
     private float movementY;
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
 
         if (count >= 12)
         {
+            door.SetActive(false);
             // Set the text value of your 'winText'
             winTextObject.SetActive(true);
         }
