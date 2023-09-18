@@ -3,6 +3,7 @@ using UnityEngine;
 // Include the namespace required to use Unity UI and Input System
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEditor.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -71,7 +72,11 @@ public class PlayerController : MonoBehaviour
 
         if (count >= 12)
         {
+            // Opens door when 12 coins are collected
             door.SetActive(false);
+        }
+        if (count >= 24)
+        {
             // Set the text value of your 'winText'
             winTextObject.SetActive(true);
         }
