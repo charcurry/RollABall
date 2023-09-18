@@ -3,7 +3,6 @@ using UnityEngine;
 // Include the namespace required to use Unity UI and Input System
 using UnityEngine.InputSystem;
 using TMPro;
-using UnityEditor.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
